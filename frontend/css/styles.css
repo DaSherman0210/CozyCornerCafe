@@ -168,3 +168,9 @@ html, body {
     gap: 1rem;
     padding-top: 1rem;
   }
+
+  .or{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
