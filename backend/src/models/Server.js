@@ -2,6 +2,7 @@ import express from "express";
 import cors from "cors";
 import bebidasRoutes from "../routes/bebidas.routes.js";
 import empleadosRoutes from "../routes/empleados.routes.js";
+import facturasRoutes from "../routes/facturas.routes.js";
 
 class Server{
 
@@ -13,6 +14,7 @@ class Server{
 
         this.bebidasPath = "/api/bebidas";
         this.empleadosPath = "/api/empleados";
+        this.facturasPath = "/api/facturas";
 
         //* Middleware
 
@@ -36,6 +38,7 @@ class Server{
     routes(){
         this.app.use(this.bebidasPath,bebidasRoutes);
         this.app.use(this.empleadosPath,empleadosRoutes);
+        this.app.use(this.facturasPath,facturasRoutes);
     }
 
     listener(){
