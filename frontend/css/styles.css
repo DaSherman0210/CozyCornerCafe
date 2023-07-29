@@ -3,15 +3,13 @@ html, body {
     width: 101vw;
     margin: 0;
     overflow: hidden;
+    position: fixed;
   }
-  
-main {
-  position: fixed;
-}
+
   .contenedor {
-    display: grid;
-    height: 100vh;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    height: 100%;
+    position: relative;
   }
   
   .division {
@@ -19,8 +17,8 @@ main {
     padding: 20px;
     color: white;
     display: flex; 
-    flex-direction: column;
-    gap: 13rem;
+    flex-direction: column; 
+    gap: 11rem;
   }
   
   .uno {
@@ -32,13 +30,12 @@ main {
     background-image: url(/frontend/assets/imgs/inicio/Rectangle\ 38.png);
     background-repeat: no-repeat;   
     background-size: cover;
-    width: 101%;
+    width: 200px;
     display: flex; 
-    position: relative;
+    align-items: flex-end;
   }
 
   .logo{
-    margin-left: 4.7rem;
     display: flex; 
     justify-content: flex-start; 
     align-items: center; 
@@ -47,7 +44,7 @@ main {
 
   .main{
     margin-left: 5rem; 
-    margin-right: 12rem; 
+    margin-right: 5rem; 
     font-size: 1.2rem;
   }
 
@@ -63,18 +60,25 @@ main {
     margin-top: 1rem;
   }
 
-  #cafe{
+  .botonRedes div{
     display: flex;
-    width: 100%;
-    height: 100vh;
+    gap: 2rem;
+  }
+
+  .imagenRedes{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  #cafe{
     position: relative;
-    top: 200px;
-    right: 20vw;
-    align-items: flex-end;
+    top: 180px;
+    right: -80px;
   }
 
   .imagen1{
-    width: 100%;
+    width: 1250px;
   }
 
   .boton-login {
@@ -82,7 +86,7 @@ main {
     background: linear-gradient(90deg, rgba(31,106,9,1) 0%, rgba(1,18,8,1) 100%);
     color: #ffffff;
     border: none;
-    width: 200px;
+    width: 350px;
     height: 60px;
     padding: 10px 20px;
     text-align: center;
@@ -112,7 +116,7 @@ main {
   }
   
   .input-bonito {
-    width: 500px;
+    width: 615px;
     height: 50px;
     padding: 20px;
     font-size: 16px;
@@ -133,7 +137,7 @@ main {
 
   .input-container div{
     background-color: #e7e7e7;
-    width: 600px;
+    width: 700px;
     padding-left: 1rem;
   }
 
@@ -167,7 +171,7 @@ main {
   #cafesito{
     position: relative;
     top: 180px;
-    right: 10px;
+    right: -80px;
   }
 
   .redes{
@@ -182,4 +186,60 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .main2{
+    margin-left: 5rem; 
+    margin-right: 7rem; 
+    font-size: 1.2rem;
+  }
+
+  /* Regsiter */
+
+  .boton-log{
+    background: rgb(31,106,9);
+    background: linear-gradient(90deg, rgba(31,106,9,1) 0%, rgba(1,18,8,1) 100%);
+    color: #ffffff;
+    border: none;
+    width: 96%;
+    height: 60px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .botonRed p{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  .divisiona{
+    flex: 1;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    display: flex; 
+    flex-direction: column; 
+    gap: 7rem;
+  }
+
+  .redas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 2rem;
+  }
+
+  .redas div{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
   }
