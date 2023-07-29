@@ -20,18 +20,8 @@ const getFactura = async (req,res) =>{
 
 const postFactura = async (req,res) =>{
     try {
-        const {nombre,edad,funcion,telefono,direccion,cedulaCiudadania,imagen} = req.body;
-        const factura = new facturas({nombre,edad,funcion,telefono,direccion,cedulaCiudadania,imagen});
-
-        //? Validacion por nombre
-
-        const existeFactura = await facturas.findOne({cedulaCiudadania})
-        if (existeFactura) {
-            return res.status(400).json({
-                msg: "Ya esta registrado este usuario"
-            });
-        }
-
+        const {nombreUsuario,precioTotal,medioPago,pedidos} = req.body;
+        const factura = new facturas({nombreUsuario,precioTotal,medioPago,pedidos});
         const nuevaFactura = await factura.save();
         res.json(nuevaFactura);
     } catch (error) {

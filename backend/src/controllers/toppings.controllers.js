@@ -20,15 +20,15 @@ const getTopping = async (req,res) =>{
 
 const postTopping = async (req,res) =>{
     try {
-        const {nombre,tipo,tipoEspecifico,precio,descripcion,imagen} = req.body;
-        const topping = new toppings({nombre,tipo,tipoEspecifico,precio,descripcion,imagen});
+        const {nombre,precio} = req.body;
+        const topping = new toppings({nombre,precio});
 
         //? Validacion por nombre
 
         const existetopping = await toppings.findOne({nombre})
         if (existetopping) {
             return res.status(400).json({
-                msg: "Ya esta registrada esta bebida"
+                msg: "Ya esta registrada este topping"
             });
         }
 

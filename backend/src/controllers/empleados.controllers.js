@@ -28,7 +28,7 @@ const postEmpleados = async (req,res) =>{
         const existeEmpleado = await empleados.findOne({cedulaCiudadania})
         if (existeEmpleado) {
             return res.status(400).json({
-                msg: "Ya esta registrado este usuario"
+                msg: "Ya esta registrado este empleado"
             });
         }
 
