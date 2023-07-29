@@ -23,6 +23,15 @@ const postEmpleados = async (req,res) =>{
         const {nombre,edad,funcion,telefono,direccion,cedulaCiudadania,imagen} = req.body;
         const empleados = new empleados({nombre,edad,funcion,telefono,direccion,cedulaCiudadania,imagen});
 
+        //? Validacion por nombre
+
+        const existeEmpleado = await empleados.findOne({cedulaCiudadania})
+        if (existeEmpleado) {
+            return res.status(400).json({
+                msg: "Ya esta registrado este usuario"
+            });
+        }
+
         const nuevoEmpleado = await empleados.save();
         res.json(nuevoEmpleado);
     } catch (error) {
