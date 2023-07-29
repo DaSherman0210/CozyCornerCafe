@@ -48,7 +48,7 @@ const deleteBebida = async (req,res) =>{
     }
 } 
 
-const updateCiclista = async (req,res) =>{
+const updateBebida = async (req,res) =>{
     try {
         const bebida = await bebidas.findOne({_id:req.body.id});
         if (req.body.nombre) {
@@ -76,4 +76,4 @@ const updateCiclista = async (req,res) =>{
     }
 }
 
-export {getBebidas,getBebida,postBebidas,deleteBebida,updateCiclista};
+export {getBebidas,getBebida,postBebidas,deleteBebida,updateBebida};
