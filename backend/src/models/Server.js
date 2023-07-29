@@ -1,6 +1,7 @@
 import express from "express";
 import cors from "cors";
 import bebidasRoutes from "../routes/bebidas.routes.js";
+import empleadosRoutes from "../routes/empleados.routes.js";
 
 class Server{
 
@@ -11,6 +12,7 @@ class Server{
         //* Paths
 
         this.bebidasPath = "/api/bebidas";
+        this.empleadosPath = "/api/empleados";
 
         //* Middleware
 
@@ -33,6 +35,7 @@ class Server{
 
     routes(){
         this.app.use(this.bebidasPath,bebidasRoutes);
+        this.app.use(this.empleadosPath,empleadosRoutes);
     }
 
     listener(){

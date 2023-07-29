@@ -2,7 +2,7 @@ import empleados from "../models/Empleados.js"
 
 const getEmpleados = async (req,res) =>{
     try {
-        const empleado = await empleado.find();
+        const empleado = await empleados.find();
         res.json(empleado);
     } catch (error) {
         console.log(error);
@@ -11,7 +11,7 @@ const getEmpleados = async (req,res) =>{
 
 const getEmpleado = async (req,res) =>{
     try {
-        const empleado = await empleado.findOne({_id:req.params.id})
+        const empleado = await empleados.findOne({_id:req.params.id})
         res.json(empleado);
     } catch (error) {
         console.log(error);
