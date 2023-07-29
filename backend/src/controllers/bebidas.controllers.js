@@ -25,7 +25,7 @@ const postBebidas = async (req,res) =>{
 
         //? Validacion por nombre
 
-        const existeBebida = await bebidas.findOne({_id:req.body.id})
+        const existeBebida = await bebidas.findOne({nombre})
         if (existeBebida) {
             return res.status(400).json({
                 msg: "Ya esta registrada esta bebida"
@@ -41,7 +41,7 @@ const postBebidas = async (req,res) =>{
 
 const deleteBebida = async (req,res) =>{
     try {
-        await bebidas.deleteOne({_id:req.body.id});
+        await bebidas.deleteOne({_id:req.params.id});
         res.status(204).send();
     } catch (error) {
         console.log(error);
@@ -50,7 +50,7 @@ const deleteBebida = async (req,res) =>{
 
 const updateBebida = async (req,res) =>{
     try {
-        const bebida = await bebidas.findOne({_id:req.body.id});
+        const bebida = await bebidas.findOne({_id:req.params.id});
         if (req.body.nombre) {
             bebida.nombre = req.body.nombre; 
         }
