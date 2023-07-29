@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+}
+
+body{
+    margin: 3rem !important;
+    color: black ;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.coffeePlace{
+    display: flex;
+    align-items: end;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+
+.union{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.union p{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-top: 1rem;
+}

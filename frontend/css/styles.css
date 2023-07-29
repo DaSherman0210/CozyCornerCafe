@@ -243,3 +243,10 @@ html, body {
     justify-content: center;
     gap: 1rem;
   }
+
+  .back{
+    display: flex;
+    justify-content: end;
+    margin-right: 2rem;
+    margin-top: 1rem;
+  }
