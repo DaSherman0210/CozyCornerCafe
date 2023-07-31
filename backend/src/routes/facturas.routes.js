@@ -14,10 +14,9 @@ router.post("/add",[
     check('medioPago',"El medio de pago no es valida").not().isEmpty(),
     check('pedidos').custom(async(pedidos = '')=>{
         for (let index = 0; index < pedidos.length; index++) {
-            const existeBebida = await bebidas.findOne([pedidos.nombre]);
-            console.log(1);
+            const existeBebida = await bebidas.findOne({ nombre: pedidos[index].nombre });
             if (!existeBebida) {
-                throw new Error(`La bebida ${nombre} y tampoco ${nombre} no esta en la base de datos`)
+                throw new Error(`La bebida  y tampoco  no esta en la base de datos`)
             }
         }
     }),
