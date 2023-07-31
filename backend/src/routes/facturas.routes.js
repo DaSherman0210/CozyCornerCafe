@@ -10,13 +10,15 @@ router.get("/all",getFacturas);
 router.get("/all/:id",getFactura);
 router.post("/add",[
     check('nombreUsuario',"El nombre no es valido").not().isEmpty(),
-    check('precioTotal',"La edad no es valida").not().isEmpty(),
-    check('medioPago',"La funcion no es valida").not().isEmpty(),
-    check('pedidos',"El telefono no es valido").not().isEmpty(),
-    check('nombre').custom(async(nombre = '')=>{
-        const existeBebida = await bebidas.findOne({nombre});
-        if (!existeBebida) {
-            throw new Error(`La bebida ${bebidas} no esta en la base de datos`)
+    check('precioTotal',"La precio total no es valida").not().isEmpty(),
+    check('medioPago',"El medio de pago no es valida").not().isEmpty(),
+    check('pedidos').custom(async(pedidos = '')=>{
+        for (let index = 0; index < pedidos.length; index++) {
+            const existeBebida = await bebidas.findOne([pedidos.nombre]);
+            console.log(1);
+            if (!existeBebida) {
+                throw new Error(`La bebida ${nombre} y tampoco ${nombre} no esta en la base de datos`)
+            }
         }
     }),
     validateDocuments
