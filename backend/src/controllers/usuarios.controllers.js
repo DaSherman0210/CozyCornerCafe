@@ -1,4 +1,5 @@
-import usuarios from "../models/Usuarios.js"
+import usuarios from "../models/Usuarios.js";
+import bcryptjs from "bcryptjs";
 
 const getUsuarios = async (req,res) =>{
     try {

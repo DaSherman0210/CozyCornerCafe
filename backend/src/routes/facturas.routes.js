@@ -2,6 +2,7 @@ import Router from "express";
 import {check} from "express-validator";
 import {validateDocuments} from "../middlewares/validate.documents.js"
 import bebidas from "../models/Bebidas.js";
+import toppings from "../models/Toppings.js";
 import {getFacturas,getFactura,postFactura,deleteFacturas,updateFactura} from "../controllers/facturas.controllers.js";
 
 const router = Router();
@@ -23,9 +24,8 @@ router.post("/add",[
             for (let i = 0; i < topping.length; i++) {
                 const existeTopping = await toppings.findOne({nombre: pedidos[index].toppings[index].nombre});
                 if (!existeTopping) {
-                    throw new Error('Saldra esta validacion?');
+                    throw new Error('No se encuentran los toppings');
                 }
-
             }
         }
     }),

@@ -3,7 +3,8 @@ import cors from "cors";
 import bebidasRoutes from "../routes/bebidas.routes.js";
 import empleadosRoutes from "../routes/empleados.routes.js";
 import facturasRoutes from "../routes/facturas.routes.js";
-import toppingsRouter from "../routes/toppings.routes.js";
+import toppingsRoutes from "../routes/toppings.routes.js";
+import usuariosRoutes from "../routes/usuarios.routes.js";
 
 class Server{
 
@@ -17,6 +18,7 @@ class Server{
         this.empleadosPath = "/api/empleados";
         this.facturasPath = "/api/facturas";
         this.toppingsPath = "/api/toppings";
+        this.usuariosPath = "/api/usuarios";
 
         //* Middleware
 
@@ -41,7 +43,8 @@ class Server{
         this.app.use(this.bebidasPath,bebidasRoutes);
         this.app.use(this.empleadosPath,empleadosRoutes);
         this.app.use(this.facturasPath,facturasRoutes);
-        this.app.use(this.toppingsPath,toppingsRouter);
+        this.app.use(this.toppingsPath,toppingsRoutes);
+        this.app.use(this.usuariosPath,usuariosRoutes);
     }
 
     listener(){
