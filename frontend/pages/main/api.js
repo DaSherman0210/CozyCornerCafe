@@ -1,8 +1,8 @@
-const url = "https://rickandmortyapi.com/api/character"
+const urlBebidas = "http://localhost:7002/api/bebidas"
 
-const getApi = async()=>{
+const getBebidas = async()=>{
     try{
-        const data = await fetch(url);
+        const data = await fetch(`${urlBebidas}/all`);
         const result = await data.json();
         return result;  
     }catch (error) {
@@ -10,4 +10,4 @@ const getApi = async()=>{
     };
 };
 
-export default getApi
+export {getBebidas};

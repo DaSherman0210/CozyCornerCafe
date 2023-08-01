@@ -32,6 +32,13 @@ nav{
   gap: 10rem;
 }
 
+.links input {
+  border-left: 0; 
+  border-top: 0; 
+  border-right: 0; 
+  border-bottom: 1px solid black;
+}
+
 .union{
   display: flex;
   align-items: center;
@@ -46,9 +53,6 @@ nav{
 }
 
 section {
-
-  width: 100%;
-  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,16 +69,11 @@ section {
   width: 300px;
   height: 550px;
   box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
-  filter: blur(1px);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: end;
   align-items: self-start;
-}
-
-.swiper-slide-active {
-  filter: blur(0px);
 }
 
 .swiper-pagination-bullet,
@@ -92,22 +91,6 @@ section {
   letter-spacing: 2px;
   font-size: 0.8rem;
   font-family: "Open Sans", sans-serif;
-}
-
-.swiper-slide--one span {
-  background: #62667f;
-}
-
-.swiper-slide--two span {
-  background: #087ac4;
-}
-
-.swiper-slide--three span {
-  background: #b45205;
-}
-
-.swiper-slide--four span {
-  background: #087ac4;
 }
 
 .swiper-slide h2 {
@@ -136,32 +119,69 @@ section {
   margin-right: 7px;
 }
 
-
-.swiper-slide--two {
-  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("https://images.unsplash.com/photo-1571900670723-a317a66e3fb7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=423&q=80")
-      no-repeat 50% 50% / cover;
-}
-
-.swiper-slide--three {
-  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("https://images.unsplash.com/photo-1549144511-f099e773c147?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80")
-      no-repeat 50% 50% / cover;
-}
-
-.swiper-slide--four {
-  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("https://images.unsplash.com/photo-1650367310179-e1b5b8e453c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80")
-      no-repeat 50% 50% / cover;
-}
-
-.swiper-slide--five {
-  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("https://images.unsplash.com/photo-1596521864207-13d46b1a0c78?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80")
-      no-repeat 50% 50% / cover;
-}
-
 .swiper-3d .swiper-slide-shadow-left,
 .swiper-3d .swiper-slide-shadow-right {
   background-image: none;
+}
+
+/* todo -- MAIN -- */
+
+.container{
+  display: grid; 
+  grid-template-columns: 1fr 2fr;
+  justify-content: space-between;
+  gap: 7rem;
+  padding-top: 2rem;
+}
+
+.container .panel{
+  background-image: url(../assets/imgs/inicio/Rectangle\ 38.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 3rem;
+  height: 780px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.container .panel h2{
+  display: flex;
+  font-size: 3.4rem;
+  justify-content: center;
+  text-align: center;
+} 
+
+.container ul{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-left: 2rem;
+}
+
+.container .panel li{
+  list-style: none;
+  font-size: 2.4rem;
+}
+
+.container .panel a{
+  text-decoration: none;
+  color: white;
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  width: 300px;
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size .4s;
+}
+
+.container .panel a:hover, a:focus {
+  background-size: 200% 2px;
+}
+
+.container .panel p{
+  text-align: center;
+  margin: 2rem;
 }
