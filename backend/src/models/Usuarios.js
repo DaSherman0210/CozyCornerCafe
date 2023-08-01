@@ -18,7 +18,7 @@ const usuariosSchema = mongoose.Schema(
             trim:true
         },
         password:{
-            type:Number,
+            type:String,
             required:[true , 'La contrseña es obligatorio'],
             trim:true
         },

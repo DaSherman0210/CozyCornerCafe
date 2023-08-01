@@ -33,6 +33,11 @@ const postUsuario = async (req,res) =>{
             });
         }
 
+        //? Encriptacion de contraseña
+
+        const salt = bcryptjs.genSaltSync();
+        usuario.password = bcryptjs.hashSync(password, salt);
+
         const nuevaUsuario = await usuario.save();
         res.json(nuevaUsuario);
     } catch (error) {
@@ -55,20 +60,20 @@ const updateUsuario = async (req,res) =>{
         if (req.body.nombre) {
             usuario.nombre = req.body.nombre; 
         }
-        if (req.body.tipo) {
-            usuario.tipo = req.body.tipo; 
+        if (req.body.direccion) {
+            usuario.direccion = req.body.direccion; 
         }
-        if (req.body.tipoEspecifico) {
-            usuario.tipoEspecifico = req.body.tipoEspecifico; 
+        if (req.body.email) {
+            usuario.email = req.body.email; 
         }
-        if (req.body.precio) {
-            usuario.precio = req.body.precio; 
+        if (req.body.password) {
+            usuario.password = req.body.password; 
         }
-        if (req.body.descripcion) {
-            usuario.descripcion = req.body.descripcion; 
+        if (req.body.rol) {
+            usuario.rol = req.body.rol; 
         }
-        if (req.body.imagen) {
-            usuario.imagen = req.body.imagen; 
+        if (req.body.estado) {
+            usuario.estado = req.body.estado; 
         }
         await usuario.save();
         res.json(usuario);

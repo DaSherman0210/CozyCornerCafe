@@ -22,6 +22,6 @@ router.post("/add",[
     validateDocuments
 ],postUsuario);
 router.delete("/del/:id",deleteUsuario);
-router.patch("upd/:id",updateUsuario);
+router.patch("/upd/:id",updateUsuario);
 
 export default router;  
