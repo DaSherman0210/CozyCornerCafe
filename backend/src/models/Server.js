@@ -5,6 +5,7 @@ import empleadosRoutes from "../routes/empleados.routes.js";
 import facturasRoutes from "../routes/facturas.routes.js";
 import toppingsRoutes from "../routes/toppings.routes.js";
 import usuariosRoutes from "../routes/usuarios.routes.js";
+import postresRoutes from "../routes/postres.routes.js";
 
 class Server{
 
@@ -19,6 +20,7 @@ class Server{
         this.facturasPath = "/api/facturas";
         this.toppingsPath = "/api/toppings";
         this.usuariosPath = "/api/usuarios";
+        this.postresPath = "/api/postres";
 
         //* Middleware
 
@@ -45,6 +47,7 @@ class Server{
         this.app.use(this.facturasPath,facturasRoutes);
         this.app.use(this.toppingsPath,toppingsRoutes);
         this.app.use(this.usuariosPath,usuariosRoutes);
+        this.app.use(this.postresPath,postresRoutes);
     }
 
     listener(){
