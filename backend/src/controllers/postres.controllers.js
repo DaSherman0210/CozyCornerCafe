@@ -28,11 +28,11 @@ const postPostre = async (req,res) =>{
         const existePostre = await postres.findOne({nombre})
         if (existePostre) {
             return res.status(400).json({
-                msg: "Ya esta registrado este empleado"
+                msg: "Ya esta registrado este postre"
             });
         }
 
-        const nuevoPostre = await postres.save();
+        const nuevoPostre = await postre.save();
         res.json(nuevoPostre);
     } catch (error) {
         console.log(error);
