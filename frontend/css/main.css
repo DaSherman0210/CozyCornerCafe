@@ -16,8 +16,8 @@ body{
 }
 
 nav{
-  display: flex;
-  justify-content: space-between;
+  display: flex !important;
+  justify-content: space-between !important;
 }
 
 .coffeePlace{
@@ -26,9 +26,9 @@ nav{
 }
 
 .links{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
   gap: 10rem;
   font-size: 2rem;
 }
@@ -41,25 +41,24 @@ nav{
 }
 
 .union{
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
+  display: flex !important;
+  text-align: center !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 
 .union a{
-  display: flex;
-  text-align: center;
-  align-items: center;
-  margin-top: 1rem;
+  display: flex !important;
+  text-align: center !important;
+  align-items: center !important;
   text-decoration: none;
   color: black;
 }
 
 section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
   overflow: hidden;
 }
 
@@ -71,7 +70,7 @@ section {
 
 .swiper-slide {
   width: 300px;
-  height: 550px;
+  height: 600px;
   box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   display: flex;
@@ -143,6 +142,7 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: 3rem;
+  margin-top: 1rem;
   height: 780px;
   color: white;
   display: flex;
