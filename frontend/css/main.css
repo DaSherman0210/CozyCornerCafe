@@ -30,6 +30,7 @@ nav{
   justify-content: center;
   align-items: center;
   gap: 10rem;
+  font-size: 2rem;
 }
 
 .links input {
@@ -41,15 +42,18 @@ nav{
 
 .union{
   display: flex;
+  text-align: center;
   align-items: center;
   justify-content: center;
 }
 
-.union p{
+.union a{
   display: flex;
   text-align: center;
   align-items: center;
   margin-top: 1rem;
+  text-decoration: none;
+  color: black;
 }
 
 section {
