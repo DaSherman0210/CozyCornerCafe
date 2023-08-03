@@ -52,62 +52,73 @@
         <div class="part1">
             <div class="size">
                 <h4>Tamaño</h4>
-                <div>
-                    <div>
-                        <img src="" alt="">
+                <div class="divTamaño" style="display: flex; gap: 20px;">
+                    <div class="peque" style="display: flex; flex-direction: column; justify-content: end; align-items: center;">
+                        <img src="../../assets/imgs/inicio/coffee.png" alt="" width="40px">
                         <p>Pequeño</p>
                     </div>
-                    <div>
-                        <img src="" alt="">
+                    <div class="medi" style="display: flex; flex-direction: column; justify-content: end; align-items: center;">
+                        <img src="../../assets/imgs/inicio/coffee.png" alt="" width="50px">
                         <p>Mediano</p>
                     </div>
-                    <div>
-                        <img src="" alt="">
+                    <div class="gran" style="display: flex; flex-direction: column; justify-content: end; align-items: center;">
+                        <img src="../../assets/imgs/inicio/coffee.png" alt="" width="60px">
                         <p>Grande</p>
                     </div>
                 </div>
             </div>
-            <div class="toppShugar">
+            <div class="toppShugar" style="display: flex; gap: 7rem; margin-top: 2rem;">
                 <div>
-                    <h2>Toppings</h2>
+                    <h4>Toppings</h4>
                     <div>
-                        <div style="display: flex; justify-content: center;align-items: center; margin: auto; font-size: 1.6rem; gap: 20px;">
-                            <input style="border-radius: 50%;" type="checkbox" name="" id="">
-                            <p style="margin: auto;">Crema 1</p>
+                        <div style="display: flex; justify-content: center;align-items: center; margin: auto; font-size: 1.6rem;">
+                            <input type="checkbox" name="" id="" style="clip-path: circle(53% at 50% 50%);">
+                            <p style="margin: auto auto auto 25px;">Crema 1</p>
                         </div>
-                        <div style="display: flex; justify-content: center;align-items: center; margin: auto; font-size: 1.6rem; gap: 20px;">
-                            <input type="checkbox" name="" id="">
-                            <p style="margin: auto;">Crema 2</p>
+                        <div style="display: flex; justify-content: center;align-items: center; margin: auto; font-size: 1.6rem;">
+                            <input type="checkbox" name="" id="" style="clip-path: circle(53% at 50% 50%);">
+                            <p style="margin: auto auto auto 25px;">Crema 2</p>
                         </div>
-                        <div style="display: flex; justify-content: center;align-items: center; margin: auto; font-size: 1.6rem; gap: 20px;">
-                            <input type="checkbox" name="" id="">
-                            <p style="margin: auto;">Crema 3</p>
+                        <div style="display: flex; justify-content: center;align-items: center; margin: auto; font-size: 1.6rem;">
+                            <input type="checkbox" name="" id="" style="clip-path: circle(53% at 50% 50%);">
+                            <p style="margin: auto auto auto 25px;">Crema 3</p>
                         </div>
-                        <div style="display: flex; justify-content: center;align-items: center; margin: auto; font-size: 1.6rem; gap: 20px;">
-                            <input type="checkbox" name="" id="">
-                            <p style="margin: auto;">Crema 4</p>
+                        <div style="display: flex; justify-content: center;align-items: center; margin: auto; font-size: 1.6rem;">
+                            <input type="checkbox" name="" id="" style="clip-path: circle(53% at 50% 50%);">
+                            <p style="margin: auto auto auto 25px;">Crema 4</p>
                         </div>
-                        <div style="display: flex; justify-content: center;align-items: center; margin: auto; font-size: 1.6rem; gap: 20px;">
-                            <input type="checkbox" name="" id="">
-                            <p style="margin: auto;">Crema 5</p>
+                        <div style="display: flex; justify-content: center;align-items: center; margin: auto; font-size: 1.6rem;">
+                            <input type="checkbox" name="" id="" style="clip-path: circle(53% at 50% 50%);">
+                            <p style="margin: auto auto auto 25px;">Crema 5</p>
                         </div>
-                        <div style="display: flex; justify-content: center;align-items: center; margin: auto; font-size: 1.6rem; gap: 20px;">
-                            <input type="checkbox" name="" id="">
-                            <p style="margin: auto;">Crema 6</p>
+                        <div style="display: flex; justify-content: center;align-items: center; margin: auto; font-size: 1.6rem;">
+                            <input type="checkbox" name="" id="" style="clip-path: circle(53% at 50% 50%);">
+                            <p style="margin: auto auto auto 25px;">Crema 6</p>
                         </div>
-                        <div style="display: flex; justify-content: center;align-items: center; margin: auto; font-size: 1.6rem; gap: 20px;">
-                            <input type="checkbox" name="" id="">
-                            <p style="margin: auto;">Crema 7</p>
+                        <div style="display: flex; justify-content: center;align-items: center; margin: auto; font-size: 1.6rem;">
+                            <input type="checkbox" name="" id="" style="clip-path: circle(53% at 50% 50%);">
+                            <p style="margin: auto auto auto 25px;">Crema 7</p>
                         </div>
                         
                     </div>
                 </div>
-                <div>
+                <div class="azucarito" style="display: flex; flex-direction: column;">
                     <h4>Azucar</h4>
+                    <progress id="progress" value="50" max="100" style="width: 250px; height: 14px;  transform: rotate(-90deg); position:relative; top: 130px; right: 130px; background-color: rgb(0, 0, 0);"></progress>
+                    <button class="progreso" style="position:relative; left: 40px; top: 0px; border-radius: 10px; width: 40px; height: 40px;" onclick="document.getElementById('progress').value += 10">⇧</button>
+                    <div>
+                      <p class="porcentaje" style="position:relative; left: 40px; top: 65px; border-radius: 10px; width: 40px; height: 40px; font-size: 30px;">50</p>
+                    </div>
+                    <button class="decadence" style="position:relative; left: 40px; top: 110px; border-radius: 10px; width: 40px; height: 40px;" onclick="document.getElementById('progress').value -= 10">⇩</button>
                 </div>
             </div>
-            <div class="quantity">
-                <p>+ 1 -</p>
+            <div class="divCantidad" style="display: flex; flex-direction: column; justify-content: center; text-align: center; align-items: center; margin-right: 9rem; margin-top: 2rem; gap: 1rem;" class="quantity">
+              <h2>Cantidad</h2>
+              <div  style="display: flex; justify-content: center; align-items: center; width: 293px; height: 69px; flex-shrink: 0; gap: 1px;" >
+                <p style="display: flex; justify-content: center; align-items: center; width: 100px; height: 60px; border: 2px solid #000;background: #FFF; margin: auto;  font-size: 4rem;"><img class="menosCantidad" src="../../assets/imgs/inicio/menos.png" alt="" width="40px"></p>
+                <p class="cantidad" style="display: flex; justify-content: center; align-items: center; width: 70px; height: 60px; border: 2px solid #000;background: #FFF; margin: auto; font-size: 2rem;">2</p>
+                <p style="display: flex; justify-content: center; align-items: center; width: 100px; height: 60px; border: 2px solid #000;background: #FFF; margin: auto; font-size: 4rem;"> <img  class="masCantidad" src="../../assets/imgs/inicio/mas.png" alt="" width="40px"> </p>
+              </div>
             </div>
         </div>
         <div class="part2" style="background-image: none;">
@@ -129,6 +140,6 @@
 
 <!-- scripts -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-<script src="helados.js" type="module" defer></script>
+<script src="carrito.js" type="module" defer></script>
 </body>
 </html>
