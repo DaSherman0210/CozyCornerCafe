@@ -44,7 +44,7 @@ Las contribuciones son bienvenidas. Si encuentras algún problema o tienes suger
 
 ## 🙏 Agradecimientos
 
-Agradecemos a el teacher vermen y a maicol por su apoyo y contribuciones a este proyecto.
+Agradecemos a el teacher vermen, a maicol y a vicky por su apoyo y contribuciones a este proyecto.
 
 ## 📧 Contacto
 
