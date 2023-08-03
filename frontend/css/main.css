@@ -134,7 +134,7 @@ section {
   display: grid; 
   grid-template-columns: 1fr 2fr;
   justify-content: space-between;
-  gap: 7rem;
+  gap: -10em;
   padding-top: 2rem;
 }
 
@@ -193,4 +193,32 @@ section {
 
 /* todo -- Checkbox -- */
 
+/* ? Toppings */
 
+.divTopping{
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
+  margin: auto; 
+  font-size: 1.6rem;
+}
+
+#topping{
+  clip-path: circle(53% at 50% 50%);
+}
+
+.textTopping{
+  margin: auto auto auto 25px;
+}
+
+/** Tamaños */
+
+.peque , .medi , .gran{
+  cursor: pointer;
+  opacity: 1;
+}
+
+.grandesito , .medianito , .pequenito{
+  cursor: pointer;
+  opacity: 0.4;
+}
