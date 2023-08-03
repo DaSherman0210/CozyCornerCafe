@@ -222,3 +222,68 @@ section {
   cursor: pointer;
   opacity: 0.4;
 }
+
+
+/* * panel */
+
+.container2{
+  display: grid; 
+  grid-template-columns: 1fr 7fr;
+  justify-content: space-between;
+  gap: -10em;
+  padding-top: 2rem;
+}
+
+.container2 .panel2{
+  background-image: url(../assets/imgs/inicio/Rectangle\ 38.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  height: 780px;
+  width: 400px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.container2 .panel2 h2{
+  display: flex;
+  font-size: 3.4rem;
+  justify-content: center;
+  text-align: center;
+} 
+
+.container2 ul{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-left: 2rem;
+}
+
+.container2 .panel2 li{
+  list-style: none;
+  font-size: 2.4rem;
+}
+
+.container2 .panel2 a{
+  text-decoration: none;
+  color: white;
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  width: 300px;
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size .4s;
+}
+
+.container2 .panel2 a:hover, a:focus {
+  background-size: 200% 2px;
+}
+
+.container2 .panel2 p{
+  text-align: center;
+  margin: 2rem;
+}
