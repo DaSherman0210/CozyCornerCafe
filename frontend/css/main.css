@@ -9,6 +9,7 @@
   padding: 0;
   box-sizing: border-box;
   
+  
 }
 
 body{
@@ -134,8 +135,8 @@ section {
   display: grid; 
   grid-template-columns: 1fr 2fr;
   justify-content: space-between;
-  gap: -10em;
-  padding-top: 2rem;
+  gap:5rem;
+  padding-top: 1rem;
 }
 
 .container .panel{
