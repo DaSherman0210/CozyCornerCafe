@@ -7,6 +7,7 @@ import toppingsRoutes from "../routes/toppings.routes.js";
 import usuariosRoutes from "../routes/usuarios.routes.js";
 import postresRoutes from "../routes/postres.routes.js";
 import heladosRoutes from "../routes/helados.routes.js";
+import authRoutes from "../routes/auth.routes.js";
 
 class Server{
 
@@ -22,7 +23,8 @@ class Server{
         this.toppingsPath = "/api/toppings";
         this.usuariosPath = "/api/usuarios";
         this.postresPath = "/api/postres";
-        this.heladosPath = "/api/helados"
+        this.heladosPath = "/api/helados";
+        this.authPath = "/api/auth";
 
         //* Middleware
 
@@ -51,6 +53,7 @@ class Server{
         this.app.use(this.usuariosPath,usuariosRoutes);
         this.app.use(this.postresPath,postresRoutes);
         this.app.use(this.heladosPath,heladosRoutes);
+        this.app.use(this.authPath,authRoutes);
     }
 
     listener(){

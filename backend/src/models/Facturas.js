@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+import mongoose, { Schema } from "mongoose";
 
 const facturasSchema = mongoose.Schema(
     {
@@ -17,11 +17,14 @@ const facturasSchema = mongoose.Schema(
             required:[true , 'El medio de pago es obligatorio'],
             trim:true
         },
-        pedidos:{
-            type:Array,
-            ref:'pedidos',
-            required:[true , 'Los pedidos son obligatorio']
-        }
+        pedidos:[{
+            bebidas:{
+                type:Schema.Types.ObjectId,
+                ref: ["bebidas","helados","postres"],
+                required:[true , 'El nombre es obligatorio'],
+                trim:true
+            }
+        }]
     }
 )
 
