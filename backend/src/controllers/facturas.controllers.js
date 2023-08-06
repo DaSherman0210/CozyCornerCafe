@@ -2,7 +2,9 @@ import facturas from "../models/Facturas.js"
 
 const getFacturas = async (req,res) =>{
     try {
-        const factura = await facturas.find();
+        const factura = await facturas.find()
+                                    /* .populate('nombreUsuario' , 'nombre')
+                                    .populate('pedidos.bebidas.id', 'nombre') */
         res.json(factura);
     } catch (error) {
         console.log(error);
@@ -11,7 +13,9 @@ const getFacturas = async (req,res) =>{
 
 const getFactura = async (req,res) =>{
     try {
-        const factura = await facturas.findOne({_id:req.params.id})
+        const {nombreUsuario} = req.params;
+        const factura = await facturas.findOne(nombreUsuario);
+                                
         res.json(factura);
     } catch (error) {
         console.log(error);

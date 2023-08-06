@@ -110,7 +110,7 @@ const facturasSchema = mongoose.Schema(
         pedidos:{
             bebidas:[bebidasSchema],
             postres:[postresSchema],
-            helados:[heladosSchema ]
+            helados:[heladosSchema]
         }
     }
 )
