@@ -41,23 +41,20 @@ const deleteFacturas = async (req,res) =>{
 const updateFactura = async (req,res) =>{
     try {
         const factura = await facturas.findOne({_id:req.params.id});
-        if (req.body.nombre) {
-            factura.nombre = req.body.nombre; 
+        if (req.body.nombreUsuario) {
+            factura.nombreUsuario = req.body.nombreUsuario; 
         }
         if (req.body.tipo) {
             factura.tipo = req.body.tipo; 
         }
-        if (req.body.tipoEspecifico) {
-            factura.tipoEspecifico = req.body.tipoEspecifico; 
+        if (req.body.precioTotal) {
+            factura.precioTotal = req.body.precioTotal; 
         }
-        if (req.body.precio) {
-            factura.precio = req.body.precio; 
+        if (req.body.medioPago) {
+            factura.medioPago = req.body.medioPago; 
         }
-        if (req.body.descripcion) {
-            factura.descripcion = req.body.descripcion; 
-        }
-        if (req.body.imagen) {
-            factura.imagen = req.body.imagen; 
+        if (req.body.pedidos) {
+            factura.pedidos = req.body.pedidos; 
         }
         await factura.save();
         res.json(factura);

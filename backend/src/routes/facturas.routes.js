@@ -1,7 +1,5 @@
 import Router from "express";
 import {check} from "express-validator";
-import bebidas from "../models/Bebidas.js";
-import toppings from "../models/Toppings.js";
 import validateJWT from "../middlewares/validate.jwt.js";
 import isAdminRole from "../middlewares/validate.role.js";
 import {validateDocuments} from "../middlewares/validate.documents.js"
@@ -17,7 +15,7 @@ router.post("/add",[
     check('nombreUsuario',"El nombre no es valido").not().isEmpty(),
     check('precioTotal',"La precio total no es valida").not().isEmpty(),
     check('medioPago',"El medio de pago no es valida").not().isEmpty(),
-    check('pedidos').custom(),
+    check('pedidos' , "Los pedidos ingresados no son validos").not().isEmpty(),
     validateDocuments
 ] ,postFactura);
 router.delete("/del/:id",[

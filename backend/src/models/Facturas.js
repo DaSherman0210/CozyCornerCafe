@@ -108,9 +108,9 @@ const facturasSchema = mongoose.Schema(
             trim:true
         },
         pedidos:{
-            bebidas:[bebidasSchema],
-            postres:[postresSchema],
-            helados:[heladosSchema]
+            bebidas:[bebidasSchema , "las bebidas no fueron ingresadas"],
+            postres:[postresSchema , "los postres no fueron ingresados"],
+            helados:[heladosSchema , "los helados no fueron ingresados"]
         }
     }
 )
