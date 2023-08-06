@@ -49,3 +49,69 @@ Agradecemos a el teacher vermen, a maicol y a vicky por su apoyo y contribucione
 ## 📧 Contacto
 
 Si tienes alguna pregunta o consulta relacionada con este proyecto, por favor contáctanos en sherman.sect@gmail.com.
+
+
+# 🥼 Funcionalidad de las busquedas
+
+POST- Facturas ejemplo: 
+
+```{
+  "nombreUsuario": "64c0212a03ed381f3c8be347",
+  "precioTotal": 1200,
+  "medioPago": "efectivo",
+  "pedidos": {
+    "bebidas":[
+      {
+        "id":"64c113dace8e81358ca28cb1",
+        "size":"mediano",
+        "gramosAzucar": 20,
+        "cantidad": 3,
+        "toppings":[
+          {
+            "id":"64c0294af61aa077c1b8d61a"
+          }
+        ]
+      },
+      {
+        "id":"64ca585fe702fca6f1d4a000",
+        "size":"grande",
+        "gramosAzucar": 10,
+        "cantidad": 6,
+        "toppings":[
+          {
+            "id":"64c0294af61aa077c1b8d621"
+          },
+          {
+            "id":"64c0294af61aa077c1b8d61d"
+          }
+        ]
+      }
+    ],
+    "postres":[
+      {
+        "id":"64ca7cd58fa1fe6d5805062d",
+        "size":"grande",
+        "gramosAzucar": 70,
+        "cantidad": 1,
+        "toppings":[
+          {
+            "id":"64c0294af61aa077c1b8d619"
+          }
+        ]
+      }
+    ],
+    "helados":[
+      {
+        "id":"64ca585fe702fca6f1d49ff8",
+        "size":"pequeño",
+        "gramosAzucar": 20,
+        "cantidad": 8,
+        "toppings":[
+          {
+            "id":"64c0294af61aa077c1b8d61b"
+          }
+        ]
+      }
+    ]
+  }
+}```
