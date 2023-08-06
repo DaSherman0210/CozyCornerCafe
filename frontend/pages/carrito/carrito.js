@@ -2,6 +2,7 @@
 
 import { getToppings } from "./api.js";
 
+let precioTotal = 0;
 //todo -- VALIDACION AZUCAR -- todo//
 
 const divAzucar = document.querySelector(".azucarito");
@@ -38,23 +39,29 @@ divCantidad.addEventListener("click",(e)=>{
 })
 
 function validacionCantidad(e){
+    const valorFinal = document.querySelector('.precioFinal');
     const cantidadValue = document.querySelector('.cantidad');
     const cantidadFactu = document.querySelector(".unidadesF");
     if(e.target.classList.contains("masCantidad")){
         const cantidad = Number(cantidadValue.textContent);
+        const cantidad2 = Number(valorFinal.textContent);
+        console.log(cantidad2);
         if (cantidad < 10) {
             cantidadValue.textContent = cantidad + 1
             cantidadFactu.textContent = cantidad + 1
+            valorFinal.textContent = cantidad2 + 2000
         }
     }
-    else if (e.target.classList.contains("menosCantidad")) {
+    if (e.target.classList.contains("menosCantidad")) {
         const cantidad = Number(cantidadValue.textContent);
         if (cantidad > 1) {
             cantidadValue.textContent = cantidad - 1
             cantidadFactu.textContent = cantidad - 1
+            valorFinal.textContent -= 2000
         }
     }
 }
+
 
 //todo -- VALIDACION TAMAÑO BEBIDA -- todo//
 
@@ -135,21 +142,6 @@ async function cargarToppings() {
         </div>
         `
     });
-    console.log(cantidadTooping);
 }
 
 //todo -- GENERACION DE PRECIO FINAL -- todo//
-
-let precioTotal = 0
-
-async function aumentarPrecio() {
-    const precioFinal = document.querySelector('.precioFinal');
-    const cantidadValue = document.querySelector('.cantidad');
-
-    console.log();
-
-    if (cantidadValue.va) {
-        
-    }
-
-}
