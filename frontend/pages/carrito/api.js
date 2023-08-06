@@ -10,4 +10,18 @@ const getToppings = async()=>{
     };
 };
 
-export {getToppings};
+const postToppings = async(toppings)=>{
+    try {
+        await fetch(`${urlToppings}/add`,{
+            method: "POST",
+            body: JSON.stringify(toppings),
+            headers:{
+                "Content-Type":"application/json"
+            }
+        });
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+export {getToppings ,postToppings};

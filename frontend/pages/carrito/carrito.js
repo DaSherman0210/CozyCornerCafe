@@ -138,3 +138,18 @@ async function cargarToppings() {
     console.log(cantidadTooping);
 }
 
+//todo -- GENERACION DE PRECIO FINAL -- todo//
+
+let precioTotal = 0
+
+async function aumentarPrecio() {
+    const precioFinal = document.querySelector('.precioFinal');
+    const cantidadValue = document.querySelector('.cantidad');
+
+    console.log();
+
+    if (cantidadValue.va) {
+        
+    }
+
+}
