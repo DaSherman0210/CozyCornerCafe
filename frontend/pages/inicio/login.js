@@ -27,11 +27,7 @@ async function validateLogin(e) {
 
 
        }else{
-        alert("Correo o contraseña incorrectos")
-            setTimeout(()=>{
-                window.location = 'login.html';
-
-            },1000)
+        alert("Correo o contraseña incorrectos");
        }
 
 }

@@ -39,7 +39,7 @@ function guardarHelados(e) {
     };
     arrayCarro = [...arrayCarro,pedido];
     console.log(arrayCarro);
-    JSON.stringify(localStorage.setItem("carro", arrayCarro));
+    localStorage.setItem("helados", JSON.stringify(arrayCarro));
 
   }
 }
