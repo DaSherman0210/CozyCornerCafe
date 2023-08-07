@@ -1,5 +1,4 @@
 //* IMPORTACIONES
-
 import { getToppings } from "./api.js";
 
 //todo -- VALIDACION AZUCAR -- todo//

@@ -18,17 +18,19 @@
             <h1>Iniciar Sesion</h1>
             <h3>Tu cuenta</h3>
             <br>
-            <form>
+            <form  id="validarUsuario">
                 <div class="input-container">
                     <div>
                         <img src="../../assets/svgs/user.svg" alt="">
-                        <input type="text" class="input-bonito" placeholder="Email" required>
+                        <input type="email" class="input-bonito" id="email" placeholder="email" required>
+
+         
                     </div>
                     <div>
                         <img src="../../assets/svgs/lock.svg" alt="...">
-                        <input type="text" class="input-bonito" placeholder="Password" required>
+                        <input type="password" class="input-bonito" id="password" placeholder="password" required>
                     </div>
-                    <button type="submit" class="boton-logi"><a href="../main/main.html">Login</a></button>
+                    <button type="submit" class="boton-logi">Login</button>
                 </div>
             </form>
             <div class="olvidaste">
@@ -50,6 +52,7 @@
     </div>
   </div>
 
+  <script type="module" src="./login.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
