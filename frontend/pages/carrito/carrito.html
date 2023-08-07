@@ -40,30 +40,14 @@
   </main>
   <div class="container2" style="max-width: 1714px;">
     <div class="panel2">
-      <div style="display: flex; justify-content:start; gap: 4rem; padding-left: 2rem; margin-bottom: 2rem; margin-top: 1rem; border-bottom: 1px solid #fff;">
+      <div style="display: flex; justify-content:start; gap: 4rem; padding-left: 2rem; margin-bottom: 2rem; margin-top: 1rem;">
         <img src="../../assets/svgs/shoppingCarWhite.svg" alt="..." width="30px">
         <h2 style="font-size: 2rem;">Tu carrito</h2>
       </div>
-      <div>
-        <div>
-          <div style="display: flex; justify-content: center; align-items: center; border-bottom: 1px solid #fff;">
-            <img src="../../assets/imgs/bebidas/avellanaShakenEspresso.png" alt="..." width="50px" height="50px" style="border-radius: 50% ;">
-            <p style="font-size: 2rem; margin: 10px;"><strong>Cafe con leche</strong></p>
-          </div>
-        </div>
-        <div>
-          <div style="display: flex; justify-content: center; align-items: center; border-bottom: 1px solid #fff; ">
-            <img src="../../assets/imgs/bebidas/avellanaShakenEspresso.png" alt="..." width="50px" height="50px" style="border-radius: 50% ;">
-            <p style="font-size: 2rem; margin: 10px;"><strong>Cafe con leche</strong></p>
-          </div>
-        </div>
-        <div>
-          <div style="display: flex; justify-content: center; align-items: center; border-bottom: 1px solid #fff;">
-            <img src="../../assets/imgs/bebidas/avellanaShakenEspresso.png" alt="..." width="50px" height="50px" style="border-radius: 50% ;">
-            <p style="font-size: 2rem; margin: 10px;"><strong>Cafe con leche</strong></p>
-          </div>
-        </div>
+      <div class="tarjetaCarrito">
+        
       </div>
+      <button class="btn btn-light">Comprar</button>
     </div>
     <div class="parteD" style="display: flex; justify-content: space-around; padding-right: 20rem;">
         <div class="part1">
@@ -113,12 +97,12 @@
         <div class="part2" style="display: flex;">
             <div>
               <div>
-                <img style="z-index: 1; position:absolute; right: -190px; top: 200px; background-size: cover; background-repeat: no-repeat; background-image: url(../../assets/imgs/inicio/fondoAzul.png); width: 1000px;" src="../../assets/imgs/inicio/Group 10080.png" alt="..."> <!-- ? Café -->
+                <img style="z-index: 1; position:absolute; right: -190px; top: 200px; background-size: cover; background-repeat: no-repeat; background-image: url(../../assets/imgs/inicio/fondoAzul.png); width: 1000px; opacity: 2;" src="../../assets/imgs/inicio/Group 10080.png" alt="..."> <!-- ? Café -->
               </div>
               <div style="z-index: 1000; position: absolute; top: 21rem; left: 98rem; display: flex; flex-direction: column; justify-content: center; align-items: end;">
                 <div style="color: white; font-size: 2rem;">
                   <strong>
-                    <h2 style="color: white; font-size: 2.3rem;">Cafe con leche</h2>
+                    <h2 class="tituloBebida" style="color: white; font-size: 2.3rem;">Cafe con leche</h2>
                   </strong>
                   <p>Toppings</p>
                   <div style="display: flex;">
@@ -138,7 +122,7 @@
                       <p class="precioFinal" style="font-size: 3rem;">2000</p>
                     </strong>
                   </div>
-                  <button style="display: flex; align-items: center; gap: 1rem; font-size: 2rem; border-radius: 20px;" type="button" class="btn btn-light"><img src="../../assets/svgs/wallet.svg" alt=""> <a style="color: black; text-decoration: none;" href="../factura/factura.html">Comprar</a></button>
+                  <button style="display: flex; align-items: center; gap: 1rem; font-size: 2rem; border-radius: 20px;" type="button" class="botonCompraBebida btn btn-light"><img src="../../assets/svgs/wallet.svg" alt="">Add Cart</button>
               </div>
             </div>
           </div>

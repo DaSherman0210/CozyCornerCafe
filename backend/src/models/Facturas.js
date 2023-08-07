@@ -17,6 +17,11 @@ const bebidasSchema = mongoose.Schema(
             ref: 'bebidas',
             required: true
         },
+        precio:{
+            type:Number,
+            required:true,
+            trim:true
+        },
         size:{
             type: String,
             required: true,
@@ -43,6 +48,11 @@ const heladosSchema = mongoose.Schema(
             ref: 'helados',
             required: true
         },
+        precio:{
+            type:Number,
+            required:true,
+            trim:true
+        },
         size:{
             type: String,
             required: true,
@@ -68,6 +78,11 @@ const postresSchema = mongoose.Schema(
             type: Schema.Types.ObjectId,
             ref: 'postres',
             required: true
+        },
+        precio:{
+            type:Number,
+            required:true,
+            trim:true
         },
         size:{
             type: String,
