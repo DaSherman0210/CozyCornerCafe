@@ -163,41 +163,47 @@ let arrayCarro = [];
 
 document.addEventListener('DOMContentLoaded',()=>{
     const getLocal = JSON.parse(localStorage.getItem('helados'));
-    getLocal.forEach(carro => {
-        const {nombre,precio} = carro;
-        tarjetaCarrito.innerHTML += 
-        `
-        <div style="display: flex; justify-content: center; align-items: center;">
-        <p style="font-size: 2rem; margin: 10px;"><strong>${nombre}</strong></p>
-        <p>$${precio}</p>
-        </div>
-        `
-    });
+    if (getLocal) {
+        getLocal.forEach(carro => {
+            const {nombre,precio} = carro;
+            tarjetaCarrito.innerHTML += 
+            `
+            <div style="display: flex; justify-content: center; align-items: center;">
+            <p style="font-size: 2rem; margin: 10px;"><strong>${nombre}</strong></p>
+            <p>$${precio}</p>
+            </div>
+            `
+        });
+    }
 
     const getBebidas = JSON.parse(localStorage.getItem('bebidas'));
+    if (getBebidas) {
         getBebidas.forEach(bebida => {
-        const {nombre ,precio} =bebida;
-        tarjetaCarrito.innerHTML +=
-        `
-        <div style="display: flex; justify-content: center; align-items: center;">
-        <p style="font-size: 2rem; margin: 10px;"><strong>${nombre}</strong></p>
-        <p>$${precio}</p>
-        </div>
-        `
-    })
+            const {nombre ,precio} =bebida;
+            tarjetaCarrito.innerHTML +=
+            `
+            <div style="display: flex; justify-content: center; align-items: center;">
+            <p style="font-size: 2rem; margin: 10px;"><strong>${nombre}</strong></p>
+            <p>$${precio}</p>
+            </div>
+            `
+        })
+    }
 
     const getPostres = JSON.parse(localStorage.getItem('postres'));
+    if (getPostres) {
         getPostres.forEach(postre => {  
-        const {nombre ,precio} =postre;
-        tarjetaCarrito.innerHTML +=
-        `
-        <div style="display: flex; justify-content: center; align-items: center;">
-        <p style="font-size: 2rem; margin: 10px;"><strong>${nombre}</strong></p>
-        <p>$${precio}</p>
-        </div>
-        `
-    })
-
+            const {nombre ,precio} =postre;
+            tarjetaCarrito.innerHTML +=
+            `
+            <div style="display: flex; justify-content: center; align-items: center;">
+            <p style="font-size: 2rem; margin: 10px;"><strong>${nombre}</strong></p>
+            <p>$${precio}</p>
+            </div>
+            `
+        })
+    }
+    
     
 
 })
