@@ -233,6 +233,7 @@ section {
   justify-content: space-between;
   gap: -10em;
   padding-top: 2rem;
+  max-width: 1714px;
 }
 
 .container2 .panel2{
@@ -251,7 +252,7 @@ section {
 
 .container2 .panel2 h2{
   display: flex;
-  font-size: 3.4rem;
+  font-size: 3rem;
   justify-content: center;
   text-align: center;
 } 
@@ -287,4 +288,264 @@ section {
 .container2 .panel2 p{
   text-align: center;
   margin: 2rem;
+}
+
+.facture{
+  overflow: hidden;
+}
+
+.factura1{
+  display: grid; 
+  grid-template-columns: 1fr 2fr; 
+  margin-top: 2rem;
+}
+
+.facturaStyle{
+  display: grid; 
+  background-color: lightgray; 
+  width: 100%; 
+  height: 76%;
+  align-items: center; 
+  text-align: center; 
+  justify-content: center;
+}
+
+.h2Factura{
+  font-size: 2.5rem; 
+  margin-top: 2rem;
+}
+
+.facturaBody{
+  font-size: 1.5rem; 
+  text-align: start; 
+  display: flex; 
+  flex-direction: column; 
+  gap: 4rem;
+}
+
+.cargarDatos{
+  display: flex; 
+  flex-direction: column;
+}
+
+.envioMensaje{
+  display: grid; 
+  justify-content: space-around; 
+  align-items: center; 
+  text-align: center;
+}
+
+.h2p1{
+  font-size: 5rem;
+}
+
+.domicil{
+  position: relative; 
+  left: 300px; 
+  top: 140px; 
+  z-index: 1;
+}
+
+.circuloVerde{
+  position: relative; 
+  bottom: -40px; 
+  z-index: 0;
+}
+
+.circuloAmarillo{
+  position: relative; 
+  top: -660px; 
+  right: -500px;
+}
+
+.circuloAzul{
+  position: relative; 
+  top: -530px; 
+  right: -520px;
+}
+
+.circuloRojo{
+  position: relative; 
+  top: -400px; 
+  right: 500px;
+}
+
+.headerCard{
+  display: flex; 
+  justify-content:start; 
+  gap: 4rem; 
+  padding-left: 2rem;
+  margin-bottom: 2rem; 
+  margin-top: 1rem;
+}
+
+.parteD{
+  display: flex; 
+  justify-content: space-around; 
+  padding-right: 20rem;
+}
+
+.tituloCard{
+  font-size: 2rem;
+}
+
+.divTamaño{
+  display: flex; 
+  gap: 20px;
+}
+
+.p{
+  display: flex; 
+  flex-direction: column; 
+  justify-content: end; 
+  align-items: center;
+}
+
+.m{
+  display: flex; 
+  flex-direction: column; 
+  justify-content: end; 
+  align-items: center;
+}
+
+.g{
+  display: flex; 
+  flex-direction: column; 
+  justify-content: end; 
+  align-items: center;
+}
+
+.toppShugar{
+  display: flex; 
+  gap: 7rem; 
+  margin-top: 2rem;
+}
+
+.azucarito{
+  display: flex; 
+  flex-direction: column;
+}
+
+#progress{
+  width: 230% ; 
+  height: 14px;  
+  transform: rotate(-90deg); 
+  position:relative; 
+  top: 190px; 
+  right: 250px; 
+  background-color: rgb(0, 0, 0);
+}
+
+.progreso{
+  position:relative; 
+  left: 0px; 
+  top: 0px; 
+  border-radius: 10px; 
+  width: 40px; 
+  height: 40px;
+}
+
+.porcentaje{
+  position:relative; 
+  left: 0px; 
+  top: 120px; 
+  border-radius: 10px; 
+  width: 40px; 
+  height: 40px; 
+  font-size: 30px;
+}
+
+.decadence{
+  position:relative; 
+  left: 0px; 
+  top: 225px; 
+  border-radius: 10px; 
+  width: 40px; 
+  height: 40px;
+}
+
+.divCantidad{
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  text-align: center; 
+  align-items: center; 
+  margin-right: 9rem; 
+  margin-top: 2rem; 
+  gap: 1rem;
+}
+
+.containerAzucar{
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  width: 213px; 
+  height: 69px; 
+  flex-shrink: 0;
+}
+
+.subirBajarAzucar{
+  cursor: pointer; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  width: 80px; 
+  height: 40px; 
+  border: 2px solid #000;
+  background: #FFF; 
+  margin: auto; 
+  font-size: 4rem;
+}
+
+.cantidad{
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  width: 40px; 
+  height: 40px; 
+  border: 2px solid #000;
+  background: #FFF; 
+  margin: auto; 
+  font-size: 2rem;
+}
+
+.mainCafe{
+  z-index: 1000; 
+  position: absolute; 
+  top: 21rem; 
+  left: 98rem; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: end;
+}
+
+.cafeCarro{
+  color: white; 
+  font-size: 2rem;
+}
+
+.tituloBebida{
+  color: white; 
+  font-size: 2.3rem;
+}
+
+.total{
+  font-size: 3rem;
+}
+
+.signoPesos{
+  font-size: 3rem;
+}
+
+.precioFinal{
+  font-size: 3rem;
+}
+
+.botonCompraBebida{
+  display: flex; 
+  align-items: center; 
+  gap: 1rem; 
+  font-size: 2rem; 
+  border-radius: 20px;
 }

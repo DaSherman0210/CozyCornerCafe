@@ -26,71 +26,71 @@
       </div>
     </nav>
   </main>
-  <div class="container2" style="max-width: 1714px;">
+  <div class="container2">
     <div class="panel2">
-      <div style="display: flex; justify-content:start; gap: 4rem; padding-left: 2rem; margin-bottom: 2rem; margin-top: 1rem;">
+      <div class="headerCard">
         <img src="../../assets/svgs/shoppingCarWhite.svg" alt="..." width="30px">
-        <h2 style="font-size: 2rem;">Tu carrito</h2>
+        <h2 class="tituloCard">Tu carrito</h2>
       </div>
       <div class="tarjetaCarrito">
         
       </div>
       <button class="comprarCarrito btn btn-light">Comprar</button>
     </div>
-    <div class="parteD" style="display: flex; justify-content: space-around; padding-right: 20rem;">
+    <div class="parteD">
         <div class="part1">
             <div class="size">
                 <h4>Tamaño</h4>
-                <div class="divTamaño" style="display: flex; gap: 20px;">
-                    <div class="p" style="display: flex; flex-direction: column; justify-content: end; align-items: center;">
+                <div class="divTamaño">
+                    <div class="p">
                         <img class="pequenito" src="../../assets/imgs/inicio/coffee.png" alt="" width="40px">
                         <p>Pequeño</p>
                     </div>
-                    <div class="m" style="display: flex; flex-direction: column; justify-content: end; align-items: center;">
+                    <div class="m">
                         <img class="medi" src="../../assets/imgs/inicio/coffee.png" alt="" width="50px">
                         <p>Mediano</p>
                     </div>
-                    <div class="g" style="display: flex; flex-direction: column; justify-content: end; align-items: center;">
+                    <div class="g">
                         <img class="grandesito" src="../../assets/imgs/inicio/coffee.png" alt="" width="60px">
                         <p>Grande</p>
                     </div>
                 </div>
             </div>
-            <div class="toppShugar" style="display: flex; gap: 7rem; margin-top: 2rem;">
+            <div class="toppShugar">
                 <div>
                     <h4>Toppings</h4>
                     <div class="toppings">
                       
                     </div>
                   </div>
-                <div class="azucarito" style="display: flex; flex-direction: column;">
+                <div class="azucarito">
                     <h4>Azucar</h4>
-                    <progress id="progress" value="50" max="100" style="width: 230% ; height: 14px;  transform: rotate(-90deg); position:relative; top: 190px; right: 250px; background-color: rgb(0, 0, 0);"></progress>
-                    <button class="progreso" style="position:relative; left: 0px; top: 0px; border-radius: 10px; width: 40px; height: 40px;" onclick="document.getElementById('progress').value += 10">⇧</button>
+                    <progress id="progress" value="50" max="100"></progress>
+                    <button class="progreso" onclick="document.getElementById('progress').value += 10">⇧</button>
                     <div>
-                      <p class="porcentaje" style="position:relative; left: 0px; top: 120px; border-radius: 10px; width: 40px; height: 40px; font-size: 30px;">50</p>
+                      <p class="porcentaje">50</p>
                     </div>
-                    <button class="decadence" style="position:relative; left: 0px; top: 225px; border-radius: 10px; width: 40px; height: 40px;" onclick="document.getElementById('progress').value -= 10">⇩</button>
+                    <button class="decadence" onclick="document.getElementById('progress').value -= 10">⇩</button>
                 </div>
             </div>
-            <div class="divCantidad" style="display: flex; flex-direction: column; justify-content: center; text-align: center; align-items: center; margin-right: 9rem; margin-top: 2rem; gap: 1rem;" class="quantity">
+            <div class="divCantidad" class="quantity">
               <h2>Cantidad</h2>
-              <div  style="display: flex; justify-content: center; align-items: center; width: 213px; height: 69px; flex-shrink: 0;" >
-                <p style="cursor: pointer; display: flex; justify-content: center; align-items: center; width: 80px; height: 40px; border: 2px solid #000;background: #FFF; margin: auto; font-size: 4rem;"><img class="menosCantidad" src="../../assets/imgs/inicio/menos.png" alt="" width="20px"></p>
-                <p class="cantidad" style="display: flex; justify-content: center; align-items: center; width: 40px; height: 40px; border: 2px solid #000;background: #FFF; margin: auto; font-size: 2rem;">1</p>
-                <p style="cursor: pointer; display: flex; justify-content: center; align-items: center; width: 80px; height: 40px; border: 2px solid #000;background: #FFF; margin: auto; font-size: 4rem;"> <img  class="masCantidad" src="../../assets/imgs/inicio/mas.png" alt="" width="20px"> </p>
+              <div class="containerAzucar" >
+                <p class="subirBajarAzucar"><img class="menosCantidad" src="../../assets/imgs/inicio/menos.png" alt="" width="20px"></p>
+                <p class="cantidad">1</p>
+                <p class="subirBajarAzucar"> <img  class="masCantidad" src="../../assets/imgs/inicio/mas.png" alt="" width="20px"> </p>
               </div>
             </div>
         </div>
-        <div class="part2" style="display: flex;">
+        <div class="part2">
             <div>
               <div>
                 <img style="z-index: 1; position:absolute; right: -190px; top: 200px; background-size: cover; background-repeat: no-repeat; background-image: url(../../assets/imgs/inicio/fondoAzul.png); width: 1000px; opacity: 2;" src="../../assets/imgs/inicio/Group 10080.png" alt="..."> <!-- ? Café -->
               </div>
-              <div style="z-index: 1000; position: absolute; top: 21rem; left: 98rem; display: flex; flex-direction: column; justify-content: center; align-items: end;">
-                <div style="color: white; font-size: 2rem;">
+              <div class="mainCafe">
+                <div class="cafeCarro">
                   <strong>
-                    <h2 class="tituloBebida" style="color: white; font-size: 2.3rem;">Cafe con leche</h2>
+                    <h2 class="tituloBebida">Cafe con leche</h2>
                   </strong>
                   <p>Toppings</p>
                   <div style="display: flex;">
@@ -103,14 +103,14 @@
                     <p class="unidadesF">1</p>
                   </div>
                   <p class="tamañoF">Mediano</p>
-                  <h2 style="font-size: 3rem;" >Total</h2>
+                  <h2 class="total" >Total</h2>
                   <div>
                     <strong style="display: flex;">
-                      <p class="signoPesos" style="font-size: 3rem;">$</p>
-                      <p class="precioFinal" style="font-size: 3rem;">2000</p>
+                      <p class="signoPesos">$</p>
+                      <p class="precioFinal">2000</p>
                     </strong>
                   </div>
-                  <button style="display: flex; align-items: center; gap: 1rem; font-size: 2rem; border-radius: 20px;" type="button" class="botonCompraBebida btn btn-light"><img src="../../assets/svgs/wallet.svg" alt="">Add Cart</button>
+                  <button type="button" class="botonCompraBebida btn btn-light"><img src="../../assets/svgs/wallet.svg" alt="">Add Cart</button>
               </div>
             </div>
           </div>
